@@ -28,7 +28,8 @@ squared.
 @@@ -/
 
 def square : Nat → Nat :=
-  sorry
+  fun n1 => n1 * n1
+
 
 /- @@@
 #1 [5 points].
@@ -117,7 +118,7 @@ replacing the *sorry* with your answer.
 def M : Nat → Nat → Nat := fun x y => x * y
 
 def M' : Nat → Nat :=
-  sorry
+  fun y => 2 * y
 
 /- @@@
 #6 [10 points].
@@ -143,6 +144,8 @@ should be 2 * 3 = 6.
 - next test that the applicatiuon, *apply add 2 3,* returns 5
 @@@ -/
 
+def apply' : (Nat → Nat → Nat) → Nat → Nat → Nat :=
+  fun f x y => f x y
 
 /- @@@
 #7 [10 points].
